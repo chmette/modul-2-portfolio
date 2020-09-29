@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  border-top: 1px dotted grey;
+
+  & p {
+    padding: 2.5rem;
+
+    a {
+      @include highlight-link;
+    }
+  }
+}

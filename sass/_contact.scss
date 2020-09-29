@@ -1,0 +1,67 @@
+.contact {
+  @include container-m-p;
+  @include bg-black;
+  padding-top: 5rem;
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+
+  &-icons {
+    text-align: center;
+
+    a {
+      // padding-right: 1.5rem;
+
+      :hover {
+        color: $highlight;
+      }
+    }
+  }
+  //   FORM
+
+  form,
+  .contact-icons {
+    width: 100%;
+    margin: 1.5rem auto;
+    padding-bottom: 2rem;
+
+    @include media-md-form;
+  }
+
+  label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  button,
+  input,
+  textarea {
+    display: block;
+    padding: 0.5rem 0;
+    margin: 1rem 0 0.5 0;
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: 3px solid $highlight;
+  }
+
+  button {
+    background-color: $highlight;
+    color: $white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px $black;
+    border: none;
+    margin: 1.5rem 0;
+    padding: 1rem;
+
+    &:hover {
+      background-color: #155f54;
+      box-shadow: 2px 2px 4px 1px $highlight;
+    }
+  }
+}

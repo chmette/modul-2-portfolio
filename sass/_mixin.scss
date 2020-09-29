@@ -1,0 +1,31 @@
+// General mixin
+
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin bg-black {
+  background-color: $black;
+  color: $white;
+}
+
+@mixin container-m-p {
+  margin: 0rem auto;
+  padding: 1.5rem 3rem;
+  width: 100%;
+}
+
+@mixin media-md-form {
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+}
+
+@mixin highlight-link {
+  color: $highlight;
+  &:hover {
+    text-decoration: underline;
+  }
+}

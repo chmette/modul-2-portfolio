@@ -1,0 +1,36 @@
+.nav {
+  &-bar {
+    width: 100%;
+
+    color: $white;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.5px dotted rgb(61, 61, 61);
+
+    &-item {
+      font-weight: 600;
+      margin: 0.5rem 0;
+      padding: 1.5rem 0;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      & a {
+        padding: 1rem;
+      }
+
+      & a:hover {
+        box-shadow: 1px 2px 10px 6px rgb(70, 69, 69);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.active {
+  box-shadow: 1px 2px 10px 6px rgb(70, 69, 69);
+}

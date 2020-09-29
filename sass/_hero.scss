@@ -1,0 +1,120 @@
+// #video_background {
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -1000;
+// }
+
+header {
+  background-image: url(/video/Black-13494.gif);
+  @include background;
+  // position: relative;
+  // overflow: hidden;
+  padding-bottom: 25%;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 80%);
+}
+
+.hero {
+  color: $white;
+  @include container-m-p;
+  z-index: 10;
+
+  &-intro,
+  &-text-name,
+  &-text-description h4 {
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+
+  // Animationen
+}
+
+// Media Query
+
+// Tablet & Desktop
+
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 15%;
+  }
+
+  .hero {
+    width: 80%;
+    padding-top: 2rem;
+
+    h4 {
+      // font-size: 2rem;
+      display: inline-block;
+      padding-right: 1rem;
+    }
+
+    .type {
+      animation: typewriter 4s steps(30) 1s 1 normal both,
+        cursor 0.7s infinite normal;
+    }
+    .line {
+      position: relative;
+      top: 35%;
+      width: 25%;
+      border-right: 2px solid $white;
+      font-size: 200%;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    &-text-name {
+      animation: hero-name 1s linear;
+    }
+  }
+}
+
+/* ANIMATION */
+
+@keyframes hero-name {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateY(75px);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateY(25px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 27ch;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: $white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

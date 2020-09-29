@@ -1,0 +1,64 @@
+.project {
+  @include container-m-p;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-card {
+    width: 100%;
+    @include bg-black;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+    p {
+      a {
+        @include highlight-link;
+      }
+    }
+
+    h4 {
+      border-top: 1px dashed grey;
+      padding-top: 1.5rem;
+    }
+
+    &-icons {
+      text-align: center;
+    }
+
+    &-image {
+      margin: 0 auto;
+      padding: 1rem;
+      width: 20rem;
+
+      & img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &-more {
+    text-align: center;
+    font-weight: 700;
+    margin: 3rem 0;
+  }
+}
+
+// Media Query
+
+// Tablet & Desktop
+
+@media (min-width: 768px) {
+  .project-card {
+    max-width: 60rem;
+    margin: 2rem;
+  }
+
+  .project-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
