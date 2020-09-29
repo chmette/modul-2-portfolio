@@ -10,7 +10,8 @@
 // }
 
 header {
-  background-image: url(../video/Black-13494.gif);
+  background-color: $black;
+  background-image: url("../video/Black-13494.gif");
   @include background;
   // position: relative;
   // overflow: hidden;

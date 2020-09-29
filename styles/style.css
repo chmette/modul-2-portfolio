@@ -121,7 +121,8 @@ i {
 }
 
 header {
-  background-image: url(../video/Black-13494.gif);
+  background-color: #131313;
+  background-image: url("../video/Black-13494.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
