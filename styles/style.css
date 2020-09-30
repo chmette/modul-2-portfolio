@@ -28,6 +28,10 @@ body {
   background-color: #f5f5f7;
 }
 
+main {
+  position: relative;
+}
+
 h1,
 h2,
 h3,
@@ -255,6 +259,22 @@ header {
   transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+  .to-top {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    padding: 1rem;
+    z-index: 5;
+  }
+  .to-top i {
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: rgba(245, 245, 247, 0.8);
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -343,6 +363,9 @@ header {
   font-weight: 700;
   margin: 3rem 0;
 }
+.project-more a i:hover {
+  transform: scale(1.1);
+}
 
 @media (min-width: 768px) {
   .project-card {
@@ -381,6 +404,10 @@ header {
 .contact .contact-icons {
     width: 40%;
   }
+}
+.contact form a i:hover,
+.contact .contact-icons a i:hover {
+  transform: scale(1.1);
 }
 .contact label {
   display: block;
@@ -421,7 +448,7 @@ footer {
   text-align: center;
   background-color: #131313;
   color: #f5f5f7;
-  border-top: 1px dotted grey;
+  border-top: 0.5px dotted grey;
 }
 footer p {
   padding: 2.5rem;
