@@ -1,7 +1,5 @@
 .nav {
   &-bar {
-    width: 100%;
-
     color: $white;
   }
 
@@ -27,10 +25,10 @@
         box-shadow: 1px 2px 10px 6px rgb(70, 69, 69);
         cursor: pointer;
       }
+
+      .active {
+        box-shadow: 1px 2px 10px 6px rgb(70, 69, 69);
+      }
     }
   }
-}
-
-.active {
-  box-shadow: 1px 2px 10px 6px rgb(70, 69, 69);
 }
